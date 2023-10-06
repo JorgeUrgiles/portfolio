@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px 100px;
+  header {
+    min-width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    height: 90px;
+    
+    .logo {
+      max-width: 60px;
+    }
+    .navigation {
+      display: flex;
+      padding: 0 30px;
+      
+      li {
+        list-style: none;
+        a {
+          position: relative;
+          text-decoration: none;
+          margin-left: 40px;
+          color: black;
+        }
+      }
+    }
+  }
+  .presentation {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    .presentation-text {
+      width: 100%;
+      max-width: 600px;
+      h2 {
+        font-size: 5em;
+        font-weight: 300;
+        line-height: 1.2em;
+        margin: 20px 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin: 20px 0;
+        span {
+          //ejemplo neon
+          /*color: #42A5F3; /* Color del texto neón */
+          /* text-shadow: 0 0 1px #42A5F3, 0 0 px #42A5F3, 0 0 20px #42A5F3;*/
+        }
+      }
+      .btn {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px 50px;
+        background-color: #42a5f3;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 500;
+        transition: 0.25s;
+        &:hover {
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .presentation-img {
+      position: relative;
+
+      .avatarJorge {
+        display: block;
+
+        img {
+            width: 100%;
+            border-radius: 40px;
+            max-width: 400px;
+        }
+      }
+    }
+  }
+  .about {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    justify-content: space-between;
+    align-items:baseline ;
+ 
+
+    .about-img {
+      position: relative;
+
+      .perfil {
+        display: block;
+        img {
+          width: 100%;
+          border-radius: 40px;
+          max-width: 400px;
+        }
+      }
+    }
+    .about-text {
+      width: 100%;
+      max-width: 600px;
+      
+      h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+      p {
+        line-height: 1.5em;
+        font-size: 1.5em;
+      }
+    }
+  }
+  .projects {
+    padding: 50px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 2em;
+
+      margin-bottom: 20px;
+    }
+    .projects-container {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .projects-container-img {
+        display: flex;
+        width: 365px;
+        height: 355px;
+        border: 0.5px solid;
+        border-radius: 17px;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.5);
+
+        .img-container {
+          height: 70%;
+
+          .projects-img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .text-container {
+          width: 100%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          top: 20px;
+          a {
+            font-size: 1.5em;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .skills{
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: 2em;
+  
+        margin-bottom: 20px;
+      }
+    .skills-container{
+        display: flex;
+        gap: 250px;
+        .skills-list{
+            list-style: none;
+           li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                max-width: 100px;
+                height: 100px;
+                margin-right: 5px;
+
+            }
+        }
+           }
+           
+
+    }
+  }
+  .contact{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+    
+    .contact-form{
+       width: 100%;
+       
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            input::placeholder{
+                padding:5px
+            }
+            textarea{
+                padding: 5px;
+            }
+            .input-a{
+                width: 100%;
+                max-width: 600px;
+                height:50px ;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+            .input-b{
+                width: 100%;
+                max-width: 600px;
+                height:200px ;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                
+            }
+            .btn-container{
+            display: flex;
+            position: relative;
+            
+            
+
+                .btn {
+                    position: relative;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 10px 50px;
+                    background-color: #42a5f3;
+                    border-radius: 40px;
+                    color: #fff;
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    transition: 0.25s;
+                    &:hover {
+                      letter-spacing: 2px;
+                    }
+                  }
+            }
+            
+            
+        }
+    }
+  }
+  footer{
+    
+  }
+}
