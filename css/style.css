@@ -45,7 +45,7 @@ main header .navigation li a {
   color: black;
 }
 main .presentation {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   position: relative;
   width: 100%;
@@ -100,6 +100,7 @@ main .presentation .presentation-img .avatarJorge img {
   max-width: 400px;
 }
 main .about {
+  margin-top: 25px;
   display: flex;
   width: 100%;
   padding: 50px;
@@ -124,13 +125,17 @@ main .about .about-text {
 }
 main .about .about-text h2 {
   margin-bottom: 20px;
-  font-size: 2em;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5em;
 }
 main .about .about-text p {
   line-height: 1.5em;
   font-size: 1.5em;
+  text-align: start;
 }
 main .projects {
+  margin-top: 25px;
   padding: 50px;
   position: relative;
   width: 100%;
@@ -140,7 +145,8 @@ main .projects {
   flex-direction: column;
 }
 main .projects h2 {
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 main .projects .projects-container {
@@ -189,7 +195,8 @@ main .skills {
   align-items: center;
 }
 main .skills h2 {
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 main .skills .skills-container {
@@ -211,6 +218,7 @@ main .skills .skills-container .skills-list li img {
   margin-right: 5px;
 }
 main .contact {
+  margin-top: 25px;
   display: flex;
   position: relative;
   width: 100%;
@@ -218,10 +226,13 @@ main .contact {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 main .contact h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 2.5em;
 }
 main .contact .contact-form {
   width: 100%;
@@ -231,15 +242,11 @@ main .contact .contact-form form {
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-main .contact .contact-form form input::-moz-placeholder {
-  padding: 5px;
-}
-main .contact .contact-form form input::placeholder {
-  padding: 5px;
+  /** input::placeholder{
+      }**/
 }
 main .contact .contact-form form textarea {
-  padding: 5px;
+  padding: 10px;
 }
 main .contact .contact-form form .input-a {
   width: 100%;
@@ -247,6 +254,8 @@ main .contact .contact-form form .input-a {
   height: 50px;
   margin-bottom: 20px;
   border-radius: 10px;
+  padding: 10px;
+  border: 1px solid;
 }
 main .contact .contact-form form .input-b {
   width: 100%;
@@ -254,6 +263,7 @@ main .contact .contact-form form .input-b {
   height: 200px;
   margin-bottom: 20px;
   border-radius: 10px;
+  border: 1px solid;
 }
 main .contact .contact-form form .btn-container {
   display: flex;
@@ -273,4 +283,52 @@ main .contact .contact-form form .btn-container .btn {
 }
 main .contact .contact-form form .btn-container .btn:hover {
   letter-spacing: 2px;
+}
+main footer {
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #727273;
+}
+main footer .text-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main footer .text-footer h3 {
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+main footer .text-footer .github {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  transition: 0.25s;
+  transition: 0.25s;
+}
+main footer .text-footer .github:hover {
+  transform: translateY(-5px);
+}
+main footer .sci {
+  display: flex;
+}
+main footer .sci li {
+  list-style: none;
+}
+main footer .sci li a {
+  color: #fff;
+  font-size: 2em;
+  margin-right: 20px;
+  display: inline-block;
+  transition: 0.25s;
+}
+main footer .sci li a:hover {
+  transform: translateY(-5px);
 }/*# sourceMappingURL=style.css.map */
